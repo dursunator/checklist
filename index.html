@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Checklist'i</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Film Checklist'i</h1>
+            <div class="header-controls">
+                <button id="soundToggle" class="theme-toggle">🔈</button>
+                <button id="themeToggle" class="theme-toggle">🌙 Tema Değiştir</button>
+            </div>
+        </header>
+
+        <div class="add-task-container">
+            <input type="text" id="newTaskInput" placeholder="Yeni bir film/dizi ekle..." class="new-task-input">
+            <button id="addTaskBtn" class="action-button add">Ekle</button>
+        </div>
+
+        <div class="statistics">
+            <h2>İstatistikler</h2>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <p>Toplam</p>
+                    <span id="totalTasks">0</span>
+                </div>
+                <div class="stat-box">
+                    <p>Tamamlanan</p>
+                    <span id="completedTasks">0</span>
+                </div>
+                <div class="stat-box">
+                    <p>Kalan</p>
+                    <span id="remainingTasks">0</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="list-controls">
+            <button id="loadDefaultBtn" class="action-button default">Varsayılan Listeyi Yükle</button>
+            <button id="clearCompletedBtn" class="action-button clear">Tamamlananları Sil</button>
+            <button id="clearAllBtn" class="action-button clear-all">Tümünü Temizle</button>
+        </div>
+
+        <div id="undoNotification" class="undo-notification">
+            <span>Film/Dizi silindi!</span>
+            <button id="undoButton" class="action-button undo">Geri Al</button>
+        </div>
+
+        <div id="taskList" class="task-list">
+            
+        </div>
+
+        
+        <button id="scrollToTop" class="scroll-to-top" title="Yukarı Çık">
+            ⬆️
+        </button>
+
+        <footer class="creator-info">
+            <span><a href="https://x.com/dursunator" target="_blank">dursunator</a> tarafından yapıldı</span>
+        </footer>
+    </div>
+    <script src="script.js"></script>        
